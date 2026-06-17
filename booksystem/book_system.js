@@ -50,3 +50,12 @@ function editbook(index) {
             document.getElementById('bookDescription').value = '';
             document.getElementById('pagesNumber').value = '';
  }
+
+ function deleteBook() {
+    const bookName = document.getElementById('bookName').value;
+    const authorName = document.getElementById('authorName').value;
+    const bookDescription = document.getElementById('bookDescription').value;
+    const pagesNumber = parseInt(document.getElementById('pagesNumber').value);
+    books.splice(books.Index, 1);
+    showbooks();
+}
