@@ -6,7 +6,19 @@
     // Check if inputs are valid numbers
     if (!isNaN(num1) && !isNaN(num2)) {
     // Perform the operation
-                    let result = multiply(num1, num2);
+    let operation = document.getElementById('operation').value;
+
+                    let result;
+
+        if (operation === 'multiply') {
+            result = multiply(num1, num2);
+        } else if (operation === 'add') {
+            result = add(num1, num2);
+        } else if (operation === 'subtract') {
+            result = subtract(num1, num2);
+        } else if (operation === 'divide') {
+            result = divide(num1, num2);
+        }
 
                     // Display the result
                     displayResult(result);
@@ -21,6 +33,30 @@
 
                 // Multiply the numbers
                 return a * b;
+            }
+
+            function add(a, b) {
+                // Introduce a debugger statement to pause execution
+                debugger;
+                // Add the numbers
+                return a + b;
+            }   
+
+            function subtract(a, b) {
+                // Introduce a debugger statement to pause execution
+                debugger;
+                // Subtract the numbers
+                return a - b;
+            }
+
+            function divide(a, b) {
+                // Introduce a debugger statement to pause execution
+                debugger;   
+            // Check for division by zero
+                if (b === 0) {
+                    return 'Error: Division by zero';
+                }   
+                return a / b;
             }
 
             function displayResult(result) {
