@@ -1,0 +1,10 @@
+{
+  "articles": [
+    {
+      "title": "Healthy Lifestyle",
+      "description": "Maintain a healthy lifestyle.",
+      "ways_to_achieve": ["Exercise", "Healthy Food"],
+      "benefits": ["Good Health", "More Energy"]
+    }
+  ]
+}
